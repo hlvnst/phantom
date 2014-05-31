@@ -1,11 +1,13 @@
 $ = window.jQuery
-$window = $(window)
-$siteHead = $('.post-template .site-head')
+$window = $ window
+$siteHead = $ '.post-template .site-head'
 
-scrollHandler = (event) ->
+scrollHandler = ->
   top = $window.scrollTop()
 
-  if top > 0 then $siteHead.addClass('scrolled')
-  else $siteHead.removeClass('scrolled')
+  $siteHead[if top > 0 then 'addClass' else 'removeClass'] 'scrolled'
 
-$window.on('scroll', scrollHandler)
+$window.on 'scroll', scrollHandler
+$(document).ready ->
+  scrollHandler
+  $siteHead.addClass 'animate'

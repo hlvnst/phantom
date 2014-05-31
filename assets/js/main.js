@@ -1,1 +1,1 @@
-(function(){var l,o,s,e;l=window.jQuery,s=l(window),o=l(".post-template .site-head"),e=function(l){var e;return e=s.scrollTop(),e>0?o.addClass("scrolled"):o.removeClass("scrolled")},s.on("scroll",e)}).call(this);
+(function(){var a,e,n,o;a=window.jQuery,n=a(window),e=a(".post-template .site-head"),o=function(){var a;return a=n.scrollTop(),e[a>0?"addClass":"removeClass"]("scrolled")},n.on("scroll",o),a(document).ready(function(){return e.addClass("animate")})}).call(this);
