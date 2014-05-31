@@ -4,7 +4,7 @@
     <div class="overlay"></div>
     {{/if}}
     <div class="inner">
-      {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+      {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}" style="background-image:url({{@blog.logo}})"></a>{{/if}}
       <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
       <p class="blog-description">{{@blog.description}}</p>
     </div>
