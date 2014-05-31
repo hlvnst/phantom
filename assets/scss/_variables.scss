@@ -1,0 +1,16 @@
+$side-head-background-width: 2400px;
+$side-head-background-height: 2400px;
+
+// Medium screens and down
+$site-head-height: 50%;
+$site-head-min-height: em(160);
+
+// Large screens and up
+$site-head-width: em(360);
+$wapper-max-width: $max-width - $site-head-width;
+
+// Colors
+$mail-hover-color: #85144B;
+$twitter-hover-color: #0074D9;
+$github-hover-color: #111111;
+$ppnl-hover-color: $hover-link-color;

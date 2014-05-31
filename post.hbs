@@ -1,0 +1,19 @@
+{{!< default}}
+{{> single-head}}
+<div class="wrapper">
+  <main class="content" role="main">
+    <article class="{{post_class}}">
+      {{#post}}
+        <header "post-head">
+          <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+          <p class="post-meta"><span>Published on<br>
+            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time></span></p>
+        </header>
+        <section class="post-content">
+          {{content}}
+        </section>
+      {{/post}}
+    </article>
+  </main>
+  {{> footer}}
+</div>

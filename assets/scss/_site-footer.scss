@@ -1,0 +1,78 @@
+.site-footer {
+  margin: $base-line-height + 1em 0 0;
+  padding: 2.5em 0 1em;
+  border-top: 1px solid $base-border-color;
+  position: relative;
+  color: $medium-gray;
+  font-family: $sans-serif;
+
+  .post-template & {
+    padding-bottom: 0;
+  }
+
+  @include media($medium-screen) {
+    padding-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 0.8em;
+  }
+
+  a {
+    color: darken($medium-gray, 25);
+
+    &:hover {
+      color: $base-link-color;
+    }
+
+    &:active, &:focus {
+      color: $base-link-color;
+      outline: none;
+    }
+  }
+}
+
+.subscribe {
+  position: absolute;
+  top: -1em;
+  left: 50%;
+  margin-left: -1.25em;
+  font-weight: bold;
+
+  a {
+    color: $medium-gray;
+
+    &:hover {
+      color: $base-accent-color;
+    }
+
+    &:active, &:focus {
+      color: $base-accent-color;
+      outline: none;
+    }
+
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .icon-rss {
+    padding: 7px;
+    border-radius: 50%;
+    border: 1px solid $base-border-color;
+    background-color: $base-body-color;
+    @include transition(all 0.1s linear);
+  }
+
+  span {
+    @extend %tooltip;
+  }
+}
+
+a:hover .icon-rss, a:focus .icon-rss {
+  border-color: $form-border-color-focus;
+  box-shadow: $form-box-shadow-focus;
+}

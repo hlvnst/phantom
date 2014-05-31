@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-backface-visibility: hidden; // Prevents nudging bug
+}
+
+%hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+%invisible {
+    visibility: hidden;
+}
+
+%tooltip {
+  $tooltip-background: transparentize($dark-gray, 0.1);
+  $tooltip-color: white;
+  $tooltip-width: 5rem;
+  $tooltip-arrow-width: 8px;
+
+  @include box-sizing(border-box);
+  @include transition (all 0.2s ease-in-out);
+  position: absolute;
+  bottom: 2.5em;
+  background-color: $tooltip-background;
+  border-radius: $base-border-radius;
+  color: $tooltip-color;
+  font-size: .9em;
+  line-height: 1.5em;
+  margin-left: -($tooltip-width/2);
+  padding: 0.5em;
+  opacity: 0;
+  text-align: center;
+  visibility: hidden;
+  min-width: $tooltip-width;
+  z-index: 99999;
+
+  .site-head & {
+    margin-left: -($tooltip-width/2) - 1rem;
+
+    @include media($medium-screen) {
+      margin-left: -($tooltip-width/2) - 1.25rem;
+    }
+  }
+
+  .subscribe & {
+    $tooltip-width: 6rem;
+    min-width: $tooltip-width;
+    bottom: 1.75em;
+    margin-left: -($tooltip-width/2) - 1.25rem;
+  }
+
+  &:after {
+    @include position(absolute, auto auto auto 50%);
+    margin-left: -$tooltip-arrow-width;
+    border: $tooltip-arrow-width solid transparent;
+    border-top-color: $tooltip-background;
+    content: '';
+    pointer-events: none;
+    bottom: -$tooltip-arrow-width*2;
+  }
+
+  a:hover & {
+    opacity: 1;
+    visibility: visible;
+    bottom: 4.25em;
+  }
+
+  .subscribe a:hover & {
+    bottom: 3.5em;
+  }
+}

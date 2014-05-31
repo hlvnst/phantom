@@ -1,0 +1,11 @@
+{{!< default}}
+{{> list-head}}
+<div class="wrapper">
+  <main class="content" role="main">
+    {{#foreach posts}}
+    {{> list-post}}
+    {{/foreach}}
+    {{pagination}}
+  </main>
+  {{> footer}}
+</div>

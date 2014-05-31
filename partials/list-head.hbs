@@ -1,0 +1,31 @@
+<header class="site-head">
+  <div class="vertical"{{#if @blog.cover}} style="background-image:url({{@blog.cover}})"{{/if}}>
+    {{#if @blog.cover}}
+    <div class="overlay"></div>
+    {{/if}}
+    <div class="inner">
+      {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+      <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+      <p class="blog-description">{{@blog.description}}</p>
+    </div>
+    <nav class="site-nav">
+      <ul class="pages">
+        <li><a href="/about/">About me</a></li>
+      </ul>
+      <ul class="social">
+        <li>
+          <a class="mail" href="mailto:colin@helvensteijn.com"><i class="icon-mail large"></i><span>Mail</span></a>
+        </li>
+        <li>
+          <a class="twitter" href="https://twitter.com/hlvnst"><i class="icon-twitter large"></i><span>Twitter</span></a>
+        </li>
+        <li>
+          <a class="github" href="https://github.com/hlvnst"><i class="icon-github large"></i><span>GitHub</span></a>
+        </li>
+        <li>
+          <a class="ppnl" href="https://piratenpartij.nl/"><i class="icon-ppnl large"></i><span>Harrr!</span>
+        </a>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,69 @@
+# Hidden folders
+.*/
+
+# OS X files
+._*
+.AppleDouble
+.DS_Store
+.localized
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+
+# Windows files
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# Linux files
+*~
+
+# Tag (etags & ctags) files
+TAGS
+tags
+
+# Vim files
+.*.sw[a-z]
+.netrwhist
+*.un~
+Session.vim
+
+# Sublime Text files
+*.sublime-project
+*.sublime-workspace
+*.sublime-projectcompletions
+
+# TextMate files
+*.tmproj
+*.tmproject
+tmtags
+
+# NetBeans files
+nbproject/*
+
+# Diff, log, etc. files
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.swn
+*.swo
+*.swp
+*.lock
+._*
+
+# Archive files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Package manager files
+node_modules/*
+assets/bower_components/*
