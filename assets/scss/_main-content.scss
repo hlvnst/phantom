@@ -123,35 +123,12 @@ article {
   font-size: 0.9em;
   color: $medium-gray;
 
-  a {
-    color: darken($medium-gray, 25);
-
-    &:hover {
-      color: $base-link-color;
-    }
-
-    &:active, &:focus {
-      color: $base-link-color;
-      outline: none;
-    }
-  }
-
   li {
-    border: 1px solid $base-border-color;
     text-align: center;
-
-    &:first-child {
-      border-radius: $base-border-radius 0 0 $base-border-radius;
-    }
-
-    &:last-child {
-      border-radius: 0 $base-border-radius $base-border-radius 0;
-    }
   }
 
   a, span {
     display: block;
-    padding: 1px 0;
   }
 
   .page-number {
@@ -162,19 +139,14 @@ article {
   .newer-posts, .older-posts {
     position: absolute;
     width: 7.5em;
+    top: 0;
   }
 
   .newer-posts {
-    top: 0;
-    left: 50%;
-    margin-left: -10.7em;
-    border-right-width: 0;
+    left: 0;
   }
 
   .older-posts {
-    top: 0;
-    right: 50%;
-    margin-right: -10.7em;
-    border-left-width: 0;
+    right: 0;
   }
 }
