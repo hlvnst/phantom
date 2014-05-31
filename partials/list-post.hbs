@@ -1,10 +1,9 @@
 <article class="{{post_class}}">
   <header class="post-head">
     <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-    <p class="post-meta"><span>Published on<br>
-      <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM D, YYYY"}}</time></span></p>
+    <p class="post-meta"><i class="icon-date"></i> <time title="{{date format="MMMM D, YYYY"}}" datetime="{{date format="YYYY-MM-DD"}}">{{date timeago="true"}}</time></p>
   </header>
   <section class="post-excerpt">
-    <p>{{excerpt}}&hellip;</p>
+    <p>{{excerpt}}&hellip; <a class="read-more" href="{{url}}">Read more<i class="icon-arrow-right"></i></a></p>
   </section>
 </article>

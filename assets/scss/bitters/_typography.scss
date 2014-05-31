@@ -73,7 +73,7 @@ img {
   max-width: 100%;
 }
 
-abbr, acronym {
+abbr, acronym, time[title] {
   border-bottom: 1px dotted $base-border-color;
   cursor: help;
 }

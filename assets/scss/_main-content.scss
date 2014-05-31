@@ -31,11 +31,7 @@ article {
 
   .post-meta {
     color: $medium-gray;
-    font: normal 0.9em/1.1 $sans-serif;
-
-    br {
-      display: none;
-    }
+    font: normal 0.9em $sans-serif;
   }
 }
 
@@ -85,6 +81,16 @@ article {
     a, a:hover, a:active, a:focus {
       color: inherit;
     }
+
+    .icon-link {
+      display: none;
+    }
+
+    a:hover + .icon-link, a:focus + .icon-link {
+      display: inline;
+      font-size: 0.75em;
+      color: $medium-gray;
+    }
   }
 
   @include media($medium-screen) {
@@ -93,7 +99,7 @@ article {
     }
 
     article .post-meta {
-      top: 0.5em;
+      top: 1em;
     }
   }
 }
@@ -101,13 +107,13 @@ article {
 @include media($medium-screen) {
   article .post-meta {
     position: absolute;
-    top: 0.25em;
+    top: 0.75em;
     right: 0;
-
-    br {
-      display: inline;
-    }
   }
+}
+
+.read-more {
+  font: normal 0.9em $sans-serif;
 }
 
 .pagination {
