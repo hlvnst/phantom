@@ -9,9 +9,9 @@ The design is fully responsive and should work on the latest versions of all maj
 
 Styles are written in [Sass][], and the little behaviour there is, in [CoffeeScript][]. Those are compiled and minified into CSS and JavaScript, respectively.
 
-Scaffolding and basic styling are provided by [Bourbon][] with [Neat][] and [Bitters][]. All of them are included in the repository, meaning no dependencies other than the Sass and CoffeeScript compilers.
-
 I use [CodeKit][] to compile stuff, but that's in no way reqiured. Similar applications, Grunt or manual command line compilation should work just as well.
+
+Scaffolding and basic styling are provided by [Bourbon][] with [Neat][] and [Bitters][]. The former two are not included in this repository, since CodeKit automatically provides them for me. If you use something else, you'll have to provide your own copy of both.
 
 ## Installation
 
